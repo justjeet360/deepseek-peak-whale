@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DeepSeek peak whale",
+    "description": "Recolors the sidebar whale blue during DeepSeek off-peak hours and red during peak hours, with a hover tooltip showing the time until the rate changes and the available credit. Blue means the 50% cheaper rate; peak is Monday to Friday, 09:00-12:00 and 14:00-18:00 Beijing time, excluding Chinese public holidays (2026-2027 calendar)."
+  }
+}

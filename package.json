@@ -1,0 +1,66 @@
+{
+  "name": "deepseek-peak-whale",
+  "version": "1.0.0",
+  "description": "DeepSeek peak/off-peak pricing library and a DeepSeek Harness sidebar-whale plugin.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justjeet360/deepseek-peak-whale.git"
+  },
+  "homepage": "https://github.com/justjeet360/deepseek-peak-whale#readme",
+  "bugs": {
+    "url": "https://github.com/justjeet360/deepseek-peak-whale/issues"
+  },
+  "engines": {
+    "node": ">=20.3"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./pricing": {
+      "types": "./src/pricing.d.ts",
+      "default": "./src/pricing.js"
+    },
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "src",
+    "scripts",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build-client.mjs",
+    "test": "node --test test/pricing.test.mjs test/client.test.mjs",
+    "prepack": "npm run build && npm test"
+  },
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "pricing",
+    "peak-hours",
+    "whale"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  }
+}
