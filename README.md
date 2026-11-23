@@ -1,5 +1,8 @@
 # DeepSeek peak whale
 
+[![test](https://github.com/justjeet360/deepseek-peak-whale/actions/workflows/test.yml/badge.svg)](https://github.com/justjeet360/deepseek-peak-whale/actions/workflows/test.yml)
+[![MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 DeepSeek peak/off-peak pricing as a small, framework-free library, plus a DeepSeek Harness plugin that recolors the existing sidebar whale.
 
 - **Library:** compute peak windows, the next transition, countdown text, and wallet formatting with no network or DSH dependency.
@@ -82,6 +85,10 @@ npm pack --dry-run   # inspect the publishable file list
 `client.js` is generated and committed so DSH can load it without a build step. Edit `src/`, then run `npm run build`.
 
 The repository is [github.com/justjeet360/deepseek-peak-whale](https://github.com/justjeet360/deepseek-peak-whale).
+
+## Support
+
+If this saves you money, star the repository so other DeepSeek Harness users can find it.
 
 ## License
 
