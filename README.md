@@ -5,6 +5,10 @@ DeepSeek peak/off-peak pricing as a small, framework-free library, plus a DeepSe
 - **Library:** compute peak windows, the next transition, countdown text, and wallet formatting with no network or DSH dependency.
 - **Harness plugin:** blue whale while off-peak, red while peak, with a hover tooltip for the countdown and available credit.
 
+![The sidebar whale with the off-peak countdown tooltip](docs/peak-whale.png)
+
+*The tooltip shows the rate, countdown, and credit. The screenshot uses the credit-unavailable state.*
+
 ## Library
 
 ```js

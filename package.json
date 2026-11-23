@@ -33,6 +33,7 @@
     "src",
     "scripts",
     "locale/*.json",
+    "docs",
     "icon.svg",
     "README.md",
     "LICENSE"
